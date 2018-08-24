@@ -75,7 +75,7 @@ var converse = function(userText, context, guarda) {
               }
               
             }else{
-            sendMessage("Desculpe, não sei responder. Entre em contato conosco via email priscila@arisp.com.br",'W');                            
+            sendMessage("Nosso assistente virtual está offline, entre em contato conosco via e-mail servicedesk@registradores.org.br",'W');                            
             }
           }
        })
