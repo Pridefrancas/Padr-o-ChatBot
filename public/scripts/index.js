@@ -61,7 +61,7 @@ var converse = function(userText, context, guarda) {
             sendMessage(answers.output.text,'W');
             //talk('WATSON', answers.output.text);
           }else{
-            if(answers.intents[0].confidence > 0.6 || answers.context.system.dialog_turn_counter > 2){
+            if(answers.intents[0].confidence > 0.6 || answers.context.system.dialog_turn_counter > 1){
               
               if(answers.output.text.length > 1){
                 for(var i=0; i < answers.output.text.length; i++){
@@ -75,7 +75,7 @@ var converse = function(userText, context, guarda) {
               }
               
             }else{
-            sendMessage("Desculpe, não sei responder. Entre em contato conosco via email priscila@arisp.com.br",'W');                            
+            sendMessage("Nosso assistente virtual está offline, entre em contato conosco via e-mail servicedesk@registradores.org.br",'W');                            
             }
           }
        })
